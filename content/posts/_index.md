@@ -1,7 +1,7 @@
 +++
 title = "Blog"
 sort_by = "date"
-paginate_by = 9
+paginate_by = 18
 [[extra.content_blocks]]
 block = "page-heading"
 title = "FANBOX Blog Clone"
