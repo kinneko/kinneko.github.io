@@ -1,0 +1,42 @@
+.taxonomy-tags {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 10px;
+  margin: 24px 0 48px;
+}
+
+.taxonomy-tags__tag {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+
+  &:hover {
+    color: $white;
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .taxonomy-tags {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+
+  .taxonomy-tags__tag {
+    min-height: 42px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
