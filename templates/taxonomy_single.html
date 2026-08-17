@@ -4,7 +4,7 @@
 {% extends "base.html" %}
 {% block main %}
 {% set taxonomy_title = taxonomy.name | replace(from="_",to=" ") | title %}
-{% set title = term.name | title %}
+{% set title = term.name %}
 {{ page_heading::page_heading(title = title) }}
 
 <div class="container">
