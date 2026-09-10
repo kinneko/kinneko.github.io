@@ -4,6 +4,18 @@
 
 ## FANBOX migration provenance
 
+### 2018-04 public-post backfill
+
+- **Canonical sources / copyright:** [kinneko on pixivFANBOX](https://kinneko.fanbox.cc/), authored and copyright-held by kinneko. This repository is an authorized static mirror of the author's own public posts; canonical-source links remain in every migrated article.
+- **Source scope:** the canonical inventory identifies two `全体公開` posts in April 2018; neither supporter-only nor private content was copied.
+- **Reader / source data:** `fanbox_public_reader` captured verified public rendered source data in `/Users/kinneko/work/fanbox-zola-local-test/apr-2018-migration-source/`. Its `article_blocks` lists no retained body-media blocks for either post. Post `11756` has only the creator-cover `og:image`, so no substitute title image was used; post `13939` retains its verified post-specific `og:image` under `static/2018-04-27-13939/`.
+- **Transformation:** original displayed text and publication timestamps were retained; donation/support-callout text was excluded. The canonical footer, specific subject tags, and exactly one `2018-04` tag accompany each article.
+
+| Published (JST) | Canonical FANBOX post |
+| --- | --- |
+| 2018-04-27 | https://kinneko.fanbox.cc/posts/11756 |
+| 2018-04-27 | https://kinneko.fanbox.cc/posts/13939 |
+
 ### 2026-08 public-post backfill
 
 - **Canonical sources / copyright:** [kinneko on pixivFANBOX](https://kinneko.fanbox.cc/), authored and copyright-held by kinneko. This repository is an authorized static mirror of the author's own public posts; canonical-source links remain in every migrated article.
