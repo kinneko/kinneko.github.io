@@ -18,6 +18,31 @@
   - matching title/body assets under `static/2026-08-*/`
 - **Transformation:** original text, body-media order, published timestamp, canonical-source footer, subject tags, and required `2026-08` tag were retained. The migration generator is ebikin original: `/Users/kinneko/work/fanbox-zola-local-test/migrate_august_2026.py`.
 
+### 2025-01 public-post backfill
+
+- **Canonical sources / copyright:** [kinneko on pixivFANBOX](https://kinneko.fanbox.cc/), authored and copyright-held by kinneko. This repository is an authorized static mirror of the author's own public posts; each migrated article retains its canonical-source URL.
+- **Source scope:** canonical FANBOX listing pagination found 19 January 2025 posts: 13 explicitly `全体公開` posts were copied; 6 `¥100` supporter-only posts were not copied.
+- **Reader / source data:** `fanbox_public_reader` captured the verified public rendered article blocks in `/Users/kinneko/work/fanbox-zola-local-test/jan-2025-migration-source/`. `article_blocks` is the body-order source and `head_images` supplies each title image.
+- **Asset source / reuse:** title and body media come only from FANBOX public image endpoints associated with each canonical post. Donation/support-callout text and adjacent media are excluded.
+- **Changed repository paths:** `content/posts/2025/01/_index.md`, the 13 dated article files in `content/posts/2025/01/`, and their corresponding cover/body assets under `static/2025-01-*/`.
+- **Transformation:** original text, displayed body-media order, timestamp, source footer, subject tags, and exactly one required `2025-01` tag were retained. The migration generator is ebikin original/adapted: `/Users/kinneko/work/fanbox-zola-local-test/migrate_january_2025.py`.
+
+| Published (JST) | Canonical FANBOX post |
+| --- | --- |
+| 2025-01-06 | https://kinneko.fanbox.cc/posts/9126929 |
+| 2025-01-07 | https://kinneko.fanbox.cc/posts/9156661 |
+| 2025-01-08 | https://kinneko.fanbox.cc/posts/9156766 |
+| 2025-01-09 | https://kinneko.fanbox.cc/posts/9156974 |
+| 2025-01-10 | https://kinneko.fanbox.cc/posts/9163056 |
+| 2025-01-14 | https://kinneko.fanbox.cc/posts/9195382 |
+| 2025-01-15 | https://kinneko.fanbox.cc/posts/9209714 |
+| 2025-01-16 | https://kinneko.fanbox.cc/posts/9173767 |
+| 2025-01-21 | https://kinneko.fanbox.cc/posts/9194255 |
+| 2025-01-23 | https://kinneko.fanbox.cc/posts/9245309 |
+| 2025-01-27 | https://kinneko.fanbox.cc/posts/9203854 |
+| 2025-01-29 | https://kinneko.fanbox.cc/posts/9253238 |
+| 2025-01-30 | https://kinneko.fanbox.cc/posts/9256984 |
+
 | Published (JST) | Canonical FANBOX post |
 | --- | --- |
 | 2026-08-18 | https://kinneko.fanbox.cc/posts/12423033 |
