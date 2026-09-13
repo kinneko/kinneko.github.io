@@ -16,6 +16,18 @@
 | 2018-04-27 | https://kinneko.fanbox.cc/posts/11756 |
 | 2018-04-27 | https://kinneko.fanbox.cc/posts/13939 |
 
+### 2019-11 public-post backfill
+
+- **Canonical sources / copyright:** [kinneko on pixivFANBOX](https://kinneko.fanbox.cc/), authored and copyright-held by kinneko. This repository is an authorized static mirror of the author's public posts; the migrated article preserves its canonical-source link.
+- **Source scope:** the auditable canonical inventory identifies two `全体公開` posts not represented by canonical footers in November 2019. Post `644361` collides with the human-owned origin/main article `content/posts/2019/11/2019-11-13.md`; it was not modified. The one otherwise-absent public post, `670427`, was copied. No restricted or supporter-only content was copied.
+- **Reader / source data:** the local macOS WebKit `fanbox_public_reader` verified `全体公開` on the canonical URL and supplied ordered `article_blocks`; verified `og:image` supplied the title image. The leading sponsorship callout was excluded. The retained lone body image is 1372×772 (not the 1200×250 supporter-roster banner) and is reproduced in its source-block position.
+- **Asset provenance / reuse:** `static/2019-11-25/XfeePpV8QmcOM7scAo7isGzq.png` already existed on origin/main and is byte-identical to the public source body image. It was left untouched; the migration adds a separately named downloaded copy, `670427-inline-01.png`, plus the verified title image. Downloads use `.part` files and atomic rename in `scripts/migrate_fanbox_2019_11.py`.
+- **Transformation:** the original displayed body text and timestamp, local title image, specific subject tags, exactly one `2019-11` tag, and canonical FANBOX footer were retained.
+
+| Published (JST) | Canonical FANBOX post |
+| --- | --- |
+| 2019-11-25 | https://kinneko.fanbox.cc/posts/670427 |
+
 ### 2026-08 public-post backfill
 
 - **Canonical sources / copyright:** [kinneko on pixivFANBOX](https://kinneko.fanbox.cc/), authored and copyright-held by kinneko. This repository is an authorized static mirror of the author's own public posts; canonical-source links remain in every migrated article.
