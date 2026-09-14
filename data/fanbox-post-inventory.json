@@ -2,7 +2,7 @@
   "schema_version": 1,
   "generated_by": "ebikin original FANBOX inventory collector",
   "source": "https://api.fanbox.cc/post.paginateCreator?creatorId=kinneko&sort=newest",
-  "latest_publishedDatetime": "2026-09-11T08:00:00+09:00",
+  "latest_publishedDatetime": "2026-09-14T08:00:00+09:00",
   "posts": [
     {
       "id": "11756",
@@ -15525,6 +15525,15 @@
       "url": "https://kinneko.fanbox.cc/posts/12571981",
       "title": "VITURE到着 -4-",
       "publishedDatetime": "2026-09-11T08:00:00+09:00",
+      "feeRequired": 0,
+      "isRestricted": false,
+      "visibility": "全体公開"
+    },
+    {
+      "id": "12572077",
+      "url": "https://kinneko.fanbox.cc/posts/12572077",
+      "title": "VITUREカメラとmacOSでハンドトラッキング",
+      "publishedDatetime": "2026-09-14T08:00:00+09:00",
       "feeRequired": 0,
       "isRestricted": false,
       "visibility": "全体公開"
