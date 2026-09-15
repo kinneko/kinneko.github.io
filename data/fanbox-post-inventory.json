@@ -2,7 +2,7 @@
   "schema_version": 1,
   "generated_by": "ebikin original FANBOX inventory collector",
   "source": "https://api.fanbox.cc/post.paginateCreator?creatorId=kinneko&sort=newest",
-  "latest_publishedDatetime": "2026-09-14T08:00:00+09:00",
+  "latest_publishedDatetime": "2026-09-15T08:00:00+09:00",
   "posts": [
     {
       "id": "11756",
@@ -15534,6 +15534,15 @@
       "url": "https://kinneko.fanbox.cc/posts/12572077",
       "title": "VITUREカメラとmacOSでハンドトラッキング",
       "publishedDatetime": "2026-09-14T08:00:00+09:00",
+      "feeRequired": 0,
+      "isRestricted": false,
+      "visibility": "全体公開"
+    },
+    {
+      "id": "12591776",
+      "url": "https://kinneko.fanbox.cc/posts/12591776",
+      "title": "DisplayLinkでAndroidの出力を使う -1-",
+      "publishedDatetime": "2026-09-15T08:00:00+09:00",
       "feeRequired": 0,
       "isRestricted": false,
       "visibility": "全体公開"
