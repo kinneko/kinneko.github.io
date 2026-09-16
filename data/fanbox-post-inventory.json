@@ -2,7 +2,7 @@
   "schema_version": 1,
   "generated_by": "ebikin original FANBOX inventory collector",
   "source": "https://api.fanbox.cc/post.paginateCreator?creatorId=kinneko&sort=newest",
-  "latest_publishedDatetime": "2026-09-15T08:00:00+09:00",
+  "latest_publishedDatetime": "2026-09-16T08:00:00+09:00",
   "posts": [
     {
       "id": "11756",
@@ -15546,6 +15546,15 @@
       "feeRequired": 0,
       "isRestricted": false,
       "visibility": "全体公開"
+    },
+    {
+      "id": "12592525",
+      "url": "https://kinneko.fanbox.cc/posts/12592525",
+      "title": "アウトラインプロセッサがほしい -1-",
+      "publishedDatetime": "2026-09-16T08:00:00+09:00",
+      "feeRequired": 100,
+      "isRestricted": true,
+      "visibility": "¥100"
     }
   ]
 }
