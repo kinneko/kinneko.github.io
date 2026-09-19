@@ -14,11 +14,16 @@ from pathlib import Path
 
 DATE_RE = re.compile(r'^date\s*=\s*"(\d{4}-\d{2})-\d{2}(?:[ T][^"]*)?"\s*$', re.MULTILINE)
 TAGS_RE = re.compile(r'^(tags\s*=\s*)(\[[^\n]*\])\s*$', re.MULTILINE)
-SOURCE_MARKER = "kinneko.fanbox.cc/posts/"
+# Both URL forms identify public FANBOX sources. Older migrated posts retain
+# FANBOX's former www.fanbox.cc/@kinneko/posts/<id> footer form.
+SOURCE_MARKERS = (
+    "kinneko.fanbox.cc/posts/",
+    "www.fanbox.cc/@kinneko/posts/",
+)
 
 
 def transformed(text: str, path: Path) -> str | None:
-    if SOURCE_MARKER not in text:
+    if not any(marker in text for marker in SOURCE_MARKERS):
         return None
     front, sep, body = text.partition("+++")
     if front:
