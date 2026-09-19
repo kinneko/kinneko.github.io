@@ -13,6 +13,10 @@ from collections import Counter
 from pathlib import Path
 
 CANONICAL_RE = re.compile(r"https://kinneko\.fanbox\.cc/posts/(\d+)")
+# Older human-owned posts use FANBOX's former public URL form. It identifies the
+# same post ID as the current canonical URL and must count as represented without
+# modifying published content merely to rewrite a footer.
+LEGACY_CANONICAL_RE = re.compile(r"https://www\.fanbox\.cc/@kinneko/posts/(\d+)")
 
 
 def main() -> None:
@@ -26,7 +30,9 @@ def main() -> None:
     inventory = json.loads(Path(args.inventory).read_text())["posts"]
     canonical_ids: set[str] = set()
     for path in Path(args.content).rglob("*.md"):
-        canonical_ids.update(CANONICAL_RE.findall(path.read_text(errors="replace")))
+        text = path.read_text(errors="replace")
+        canonical_ids.update(CANONICAL_RE.findall(text))
+        canonical_ids.update(LEGACY_CANONICAL_RE.findall(text))
 
     missing = [
         post for post in inventory
